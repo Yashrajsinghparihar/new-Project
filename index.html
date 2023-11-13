@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    /* This is a CSS file for the HTML code */
+
+    /*  Style the universerl container  */
+
+    * {
+        margin: 0px;
+        padding: 5px;
+    }
+
+    /* Style the input container */
+
+    .inputContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
+        background-color: chocolate;
+    }
+
+    /* Style the input elements */
+    input {
+        width: 150px;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    /* Style the button container */
+    .btncont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    /* Style the buttons */
+    button {
+        width: 100px;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    /* Style the create button */
+    .create {
+        background-color: green;
+        margin-right: 20px;
+    }
+
+    /* Style the delete button */
+    .delete {
+        background-color: red;
+        margin-left: 20px;
+        text-decoration: aliceblue;
+    }
+
+    /* Style the main container */
+    .mainContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    /* Style the ticket */
+    .ticket {
+        margin-top: 5%;
+        border: 2px solid red;
+        border-radius: 5%;
+        height: 180px;
+        width: 200px;
+        padding: 2%;
+        background-color: aquamarine;
+    }
+
+    /* Style the property name */
+    .PropertyName {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    /* Style the price */
+    .Price {
+        color: green;
+        font-size: 20px;
+    }
+
+    /* Style the location */
+    .Location {
+        color: blue;
+        font-size: 16px;
+    }
+</style>
+
+
+<body>
+    <div class="inputContainer">
+
+        <input type="text" class="PropertyName" placeholder="Name" value="">
+        <input type="number" class="Price" placeholder="Price" value="">
+        <input type="text" class="Location" placeholder="location" value="">
+    </div>
+    <br>
+
+    <br>
+    <div class="btncont">
+        <button class="create"> Create </button>
+        <button class="delete"> Delete </button>
+    </div>
+
+    <div class="mainContainer">
+
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/short-unique-id@latest/dist/short-unique-id.min.js"></script>
+<script src="script.js"></script>
+
+</html>
